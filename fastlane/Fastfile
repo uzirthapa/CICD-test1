@@ -44,7 +44,7 @@ platform :ios do
       in_house: false
     )
     
-    increment_build_number(xcodeproj: "your_project_name.xcodeproj")
+    increment_build_number(xcodeproj: "CICD-test1.xcodeproj")
     
     cocoapods(
       clean_install: true
@@ -62,7 +62,7 @@ platform :ios do
 
     gym(
       configuration: "Release",
-      workspace: "CICD-test1.xcodeproj",
+      workspace: "CICD-test1.xcworkspace",
       scheme: "CICD-test1",
       export_method: "app-store",
       export_options: {
